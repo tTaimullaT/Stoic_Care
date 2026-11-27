@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta name="description" content="Choose your Stoic Care challenge plan and prepare for your first week.">
+    <title>The Forge | STOIC CARE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Caveat:wght@500;600;700&family=Fragment+Mono&family=Fraunces:ital,opsz,wght@0,9..144,500..900;1,9..144,500..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-tone="balanced">
+    <div class="dim" id="dim" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="nav scrolled" id="nav">
+        <div class="nav-in">
+            <a class="brand" href="index.html#top">STOIC CARE<span class="b-dot"></span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html#habits">HABITS</a>
+                <a href="index.html#loop">THE LOOP</a>
+            </nav>
+            <div class="nav-right">
+                <span class="clock" id="clock">UTC 00:00:00</span>
+                <span class="live-dot" aria-hidden="true"></span>
+                <a class="btn-mini" href="#forge">CHOOSE A PLAN</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sec sec--tone ph-iron page-open" id="forge">
+            <div class="wrap">
+                <div class="eyebrow">THE FORGE / 07 DAYS</div>
+                <h1 class="h-mono">Begin with one honest week.</h1>
+                <p class="lead">Choose how you want to keep your record. Your first seven days are free on every plan.</p>
+
+                <div class="plan-line" id="planLine" aria-live="polite">PLAN: SELECT A TIER TO CONTINUE.</div>
+
+                <div class="tiers" aria-label="Challenge plans">
+                    <article class="tier">
+                        <div class="t-head"><h2 class="t-name">THE FREE CHECK</h2></div>
+                        <p class="t-price">$0</p>
+                        <p class="t-per">YOUR FIRST WEEK</p>
+                        <ul>
+                            <li><span class="ic"><i data-lucide="check"></i></span>Daily code and three habit prompts</li>
+                            <li><span class="ic"><i data-lucide="check"></i></span>Private progress record</li>
+                            <li><span class="ic"><i data-lucide="check"></i></span>No payment details required</li>
+                        </ul>
+                        <button class="t-cta" type="button" data-plan="free">Choose free</button>
+                    </article>
+
+                    <article class="tier pro">
+                        <div class="t-head"><h2 class="t-name">STANDARD ISSUE</h2><span class="t-tag">7 DAY TRIAL</span></div>
+                        <p class="t-price">$8</p>
+                        <p class="t-per">PER MONTH AFTER THE FIRST WEEK</p>
+                        <ul>
+                            <li><span class="ic"><i data-lucide="check"></i></span>Daily code and habit prompts</li>
+                            <li><span class="ic"><i data-lucide="check"></i></span>Photo proof and progress history</li>
+                            <li><span class="ic"><i data-lucide="check"></i></span>Midnight verdicts in your chosen tone</li>
+                        </ul>
+                        <button class="t-cta solid" type="button" data-plan="pro">Choose standard</button>
+                    </article>
+
+                    <article class="tier">
+                        <div class="t-head"><h2 class="t-name">THE PAPER</h2></div>
+                        <p class="t-price">$15</p>
+                        <p class="t-per">ONE TIME AFTER THE FIRST WEEK</p>
+                        <ul>
+                            <li><span class="ic"><i data-lucide="check"></i></span>Everything in Standard Issue</li>
+                            <li><span class="ic"><i data-lucide="check"></i></span>Printed challenge journal</li>
+                            <li><span class="ic"><i data-lucide="check"></i></span>One-time purchase</li>
+                        </ul>
+                        <button class="t-cta" type="button" data-plan="paper">Choose paper</button>
+                    </article>
+                </div>
+
+                <p class="t-foot">This page is a front-end preview. Plan selection and email entry are not connected to billing, account creation, email delivery, or shipping yet.</p>
+
+                <form id="codeForm" novalidate>
+                    <label class="f-label" for="email">WHERE SHOULD YOUR FIRST CODE GO?</label>
+                    <div class="f-row">
+                        <div class="f-field"><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="fErr"></div>
+                        <button class="t-cta solid" type="submit">Prepare my week</button>
+                    </div>
+                    <p class="f-err" id="fErr" role="alert" hidden>ENTER A VALID EMAIL ADDRESS.</p>
+                </form>
+
+                <section class="f-done" id="fDone" aria-live="polite" hidden>
+                    <div class="fd-line">YOUR PREVIEW IS READY</div>
+                    <p>This demo does not send email or save your address. Here is a sample first code:</p>
+                    <div class="fd-code"><span class="fd-k">FIRST CODE</span><span class="fd-w" id="fdWord">IRON</span></div>
+                    <div class="fd-count">NEXT SAMPLE RESET IN <span id="fdTimer">--:--:--</span></div>
+                </section>
+            </div>
+        </section>
+        <section class="sec sec--return ph-iron">
+            <div class="wrap"><a class="mlink" href="index.html#top">← RETURN TO THE BEGINNING</a></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

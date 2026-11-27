@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E8DFD0">
+    <meta name="description"
+        content="Before discipline comes silence. A 7-day challenge to rebuild your focus — one code at dawn, ink on paper, one verdict at midnight.">
+    <title>STOIC CARE — Before discipline comes silence.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Caveat:wght@500;600;700&family=Fragment+Mono&family=Fraunces:ital,opsz,wght@0,9..144,500..900;1,9..144,500..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <noscript>
+        <style>
+            [data-reveal] {
+                opacity: 1 !important
+            }
+        </style>
+    </noscript>
+</head>
+
+<body data-tone="balanced">
+    <div class="dim" id="dim" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ============ NAV (starts warm, goes cold with the page) ============ -->
+    <header class="nav" id="nav">
+        <div class="nav-in">
+            <a class="brand" href="#top">STOIC CARE<span class="b-dot"></span></a>
+            <nav class="nav-links" aria-label="Sections">
+                <a href="#habits">HABITS</a>
+                <a href="#loop">THE LOOP</a>
+                <a href="#tone">TONE</a>
+                <a href="#wall">THE WALL</a>
+                <a href="./pricing.html">PRICING</a>
+            </nav>
+            <div class="nav-right">
+                <span class="clock" id="clock">UTC 00:00:00</span>
+                <span class="live-dot" aria-hidden="true"></span>
+                <a class="btn-mini" href="#forge">BEGIN</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ 01 — HERO / SILENCE (warm) ============ -->
+        <section class="sec sec--hero ph-warm" id="top">
+            <div class="wrap hero">
+                <div class="hero-copy">
+                    <div class="eyebrow">A PROTOCOL THAT BEGINS AT 06:00</div>
+                    <h1 class="hero-h">Before discipline<br><em>comes silence.</em></h1>
+                    <p class="lead">A <b>challenge</b> to rebuild your focus. One code at dawn, ink
+                        on paper, one
+                        verdict
+                        at midnight. No noise in between.</p>
+                    <div class="hero-cta">
+                        <a class="btn" href="pricing.html">BEGIN QUIETLY <span class="ic"><i
+                                    data-lucide="arrow-down-right"></i></span></a>
+                        <a class="mlink" href="#habits">SEE WHAT THE DAYS ASK <span class="ic"><i
+                                    data-lucide="arrow-down"></i></span></a>
+                    </div>
+                </div>
+
+                <div class="hero-scene">
+                    <div class="scene">
+                        <!-- closed leather notebook on a wooden table -->
+                        <div class="nb">
+                            <div class="nb-pages" aria-hidden="true"></div>
+                            <div class="nb-ribbon" aria-hidden="true"></div>
+                            <div class="nb-cover">
+                                <div class="nb-stitch" aria-hidden="true"></div>
+                                <span class="nb-mono">S</span>
+                                <span class="nb-num"></span>
+                                <div class="nb-band" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <!-- black coffee, steam frozen mid-curl -->
+                        <svg class="cup" viewBox="0 0 200 240" aria-hidden="true">
+                            <defs>
+                                <filter id="cupBlur" x="-40%" y="-40%" width="180%" height="180%">
+                                    <feGaussianBlur stdDeviation="4" />
+                                </filter>
+                                <filter id="steamBlur" x="-60%" y="-60%" width="220%" height="220%">
+                                    <feGaussianBlur stdDeviation="3.2" />
+                                </filter>
+                            </defs>
+                            <ellipse cx="100" cy="216" rx="86" ry="16" fill="rgba(52,34,16,.28)"
+                                filter="url(#cupBlur)" />
+                            <ellipse cx="100" cy="208" rx="76" ry="15" fill="#EFE8DA" />
+                            <ellipse cx="100" cy="206" rx="60" ry="10" fill="#E4DCCB" />
+                            <path d="M145,138 q28,2 26,26 q-2,22 -28,18" fill="none" stroke="#EFE8DA" stroke-width="10"
+                                stroke-linecap="round" />
+                            <path d="M145,138 q28,2 26,26 q-2,22 -28,18" fill="none" stroke="#D8CFBC" stroke-width="4"
+                                stroke-linecap="round" />
+                            <path d="M56,118 L144,118 L137,192 Q135,203 124,203 L76,203 Q65,203 63,192 Z"
+                                fill="#F3EDE1" />
+                            <path d="M56,118 L144,118 L143,124 L57,124 Z" fill="#E7DFCE" />
+                            <ellipse cx="100" cy="118" rx="44" ry="10.5" fill="#2A1B10" />
+                            <path d="M72,116 q28,-7 56,0" fill="none" stroke="rgba(255,236,200,.18)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <path d="M90,94 q-9,-18 0,-34 q8,-15 0,-28" fill="none" stroke="#F7F2E6" stroke-width="5"
+                                stroke-linecap="round" opacity=".5" filter="url(#steamBlur)" />
+                            <path d="M113,98 q-7,-14 0,-28 q6,-12 0,-24" fill="none" stroke="#F7F2E6" stroke-width="4.5"
+                                stroke-linecap="round" opacity=".4" filter="url(#steamBlur)" />
+                        </svg>
+
+                        <!-- a sprig of sage -->
+                        <svg class="sprig" viewBox="0 0 240 120" aria-hidden="true">
+                            <path d="M8,92 C60,74 120,62 230,32" fill="none" stroke="#8C9A84" stroke-width="3"
+                                stroke-linecap="round" />
+                            <ellipse cx="42" cy="80" rx="16" ry="7" fill="#A8B5A0" transform="rotate(-14 42 80)" />
+                            <ellipse cx="78" cy="70" rx="17" ry="7.5" fill="#9AA88F" transform="rotate(-11 78 70)" />
+                            <ellipse cx="116" cy="61" rx="16" ry="7" fill="#A8B5A0" transform="rotate(-13 116 61)" />
+                            <ellipse cx="152" cy="53" rx="15" ry="6.5" fill="#97A68B" transform="rotate(-15 152 53)" />
+                            <ellipse cx="188" cy="45" rx="14" ry="6" fill="#A8B5A0" transform="rotate(-18 188 45)" />
+                            <ellipse cx="218" cy="36" rx="12" ry="5.5" fill="#93A287" transform="rotate(-20 218 36)" />
+                            <path d="M30,86 L54,74 M66,76 L90,64 M104,67 L128,55 M140,59 L164,47 M176,51 L200,39"
+                                stroke="#7E8C77" stroke-width="1.2" />
+                        </svg>
+
+                        <!-- morning light through the window -->
+                        <div class="beam" aria-hidden="true"></div>
+                        <div class="beam b2" aria-hidden="true"></div>
+                    </div>
+                    <div class="fig">NOTHING HAS HAPPENED YET. THAT'S THE POINT.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ THRESHOLD I : sand → linen ============ -->
+        <section class="strip strip--1">
+            <div class="strip-in">
+                <p class="s-a" data-reveal>silence is the first habit.</p>
+                <p class="s-b" data-reveal data-delay="60">It costs nothing. That's why almost nobody pays it.</p>
+            </div>
+        </section>
+
+        <!-- ============ 02 — THE THREE HABITS (linen) ============ -->
+        <section class="sec sec--habits ph-paper" id="habits">
+            <div class="wrap">
+                <div class="eyebrow" data-reveal>THE THREE PILLARS OF LIFE</div>
+                <h2 class="h-serif" data-reveal>You don't need ten habits.<br>You need three.</h2>
+                <p class="lead" data-reveal>The same three obligations, every morning. Small enough to finish. Heavy
+                    enough to matter. Do them before the world wakes up and asks for anything.</p>
+
+                <div class="habits">
+                    <div class="habit" data-reveal>
+                        <div class="h-in">
+                            <div class="h-word">MOVE</div>
+                            <svg class="h-under" viewBox="0 0 220 14" aria-hidden="true">
+                                <path d="M4 9 Q 60 3 112 8 T 216 7" fill="none" stroke="currentColor" stroke-width="4"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <div class="h-rule">NO EXCUSES</div>
+                            <p class="h-body">Run, walk, lift, drag something. The mode is negotiable — the twenty
+                                minutes are not. Rain is not an excuse; it's weather.</p>
+                            <div class="h-week"><span>WEEK 1</span><i class="h-slot f"></i><i class="h-slot f"></i><i
+                                    class="h-slot f"></i><i class="h-slot f"></i><i class="h-slot"></i><i
+                                    class="h-slot"></i><i class="h-slot"></i></div>
+                        </div>
+                    </div>
+                    <div class="habit" data-reveal data-delay="90">
+                        <div class="h-in">
+                            <div class="h-word">STUDY</div>
+                            <svg class="h-under" viewBox="0 0 220 14" aria-hidden="true">
+                                <path d="M4 8 Q 70 2 120 9 T 216 5" fill="none" stroke="currentColor" stroke-width="4"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <div class="h-rule">NO TABS. NO PAUSES.</div>
+                            <p class="h-body">One book, one page target set the night before. Skimming doesn't count —
+                                the ink has to actually move. If it isn't on paper by evening, it didn't happen.</p>
+                            <div class="h-week"><span>WEEK 1</span><i class="h-slot f"></i><i class="h-slot f"></i><i
+                                    class="h-slot f"></i><i class="h-slot"></i><i class="h-slot"></i><i
+                                    class="h-slot"></i><i class="h-slot"></i></div>
+                        </div>
+                    </div>
+                    <div class="habit" data-reveal data-delay="180">
+                        <div class="h-in">
+                            <div class="h-word">CREATE</div>
+                            <svg class="h-under" viewBox="0 0 220 14" aria-hidden="true">
+                                <path d="M4 7 Q 60 4 110 10 T 216 6" fill="none" stroke="currentColor" stroke-width="4"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <div class="h-rule">MAKE SOMETHING REAL.</div>
+                            <p class="h-body">Write, draw, build, compose. A half-finished thing is a whole nothing, and
+                                the audit knows the difference.</p>
+                            <div class="h-week"><span>WEEK 1</span><i class="h-slot f"></i><i class="h-slot f"></i><i
+                                    class="h-slot"></i><i class="h-slot"></i><i class="h-slot"></i><i
+                                    class="h-slot"></i><i class="h-slot"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ THRESHOLD II : linen → stone (the door) ============ -->
+        <section class="strip strip--2">
+            <div class="strip-in">
+                <p class="s-a" data-reveal>the warm part of the morning is over.</p>
+                <p class="s-b" data-reveal data-delay="60">PAST THIS LINE, EVERYTHING IS COUNTED.</p>
+            </div>
+        </section>
+
+        <!-- ============ 03 — THE PROOF LOOP (stone) ============ -->
+        <section class="sec sec--loop ph-stone" id="loop">
+            <div class="wrap">
+                <div class="eyebrow" data-reveal>THE PROOF LOOP</div>
+                <h2 class="h-mono" data-reveal>Five steps. No shortcuts. No memory for excuses.</h2>
+                <p class="lead" data-reveal>Everything is logged. Nothing is believed. Open a step — it opens like a
+                    file, and it closes the same way.</p>
+
+                <div class="feed" data-reveal>
+                    <div class="feed-head"><span>STOIC/OS — CODE FEED</span><span class="live-dot"
+                            aria-hidden="true"></span></div>
+                    <div class="feed-body" id="cfZone">
+                        <div class="feed-word"><span id="cfWord">IRON</span><i class="feed-cursor"
+                                aria-hidden="true"></i></div>
+                        <div class="feed-bar"><i id="cfBar"></i></div>
+                        <div class="feed-meta"><span>ROTATION — 04:00</span><span>8 WORDS / WEEK — NO REPEATS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="steps" data-reveal>
+                    <button class="step" aria-expanded="true" aria-controls="step-detail-code">
+                        <span class="s-num">01</span>
+                        <span class="s-body"><span class="s-title">THE CODE</span><span class="s-line">06:00 — the code
+                                resets.</span></span>
+                        <span class="s-ic ic"><i data-lucide="plus"></i></span>
+                    </button>
+                    <div class="step-detail" id="step-detail-code">
+                        <div class="sd-in">
+                            <p class="sd-spec">The word rotates daily and never repeats inside one week. It doesn't
+                                resend — oversleep, and it simply waits, noting the delay in your file.</p>
+                            <div class="sd-art">
+                                <span class="chip">TODAY'S WORD: <b id="codeChip">IRON</b></span>
+                                <span class="chip">DELIVERY — 06:00 SHARP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="step" aria-expanded="false" aria-controls="step-detail-entry">
+                        <span class="s-num">02</span>
+                        <span class="s-body"><span class="s-title">THE ENTRY</span><span class="s-line">Handwritten
+                                entry. Ink on paper.</span></span>
+                        <span class="s-ic ic"><i data-lucide="plus"></i></span>
+                    </button>
+                    <div class="step-detail" id="step-detail-entry" hidden>
+                        <div class="sd-in">
+                            <p class="sd-spec">Your hand, your ink, your page. The entry names the word, the hour, and
+                                the work. This is where the day stops being abstract — a typed entry weighs nothing. Ink
+                                weighs something.</p>
+                            <div class="sd-art"><span class="chip chip-hand">IRON — 06:04 — MOVE</span></div>
+                        </div>
+                    </div>
+
+                    <button class="step" aria-expanded="false" aria-controls="step-detail-photo">
+                        <span class="s-num">03</span>
+                        <span class="s-body"><span class="s-title">THE PHOTO</span><span class="s-line">Photo
+                                submission. One frame, timestamped.</span></span>
+                        <span class="s-ic ic"><i data-lucide="plus"></i></span>
+                    </button>
+                    <div class="step-detail" id="step-detail-photo" hidden>
+                        <div class="sd-in">
+                            <p class="sd-spec">One shot, the whole page, the word legible. The EXIF time must fall
+                                inside the 06:00–06:30 window. Filters are flagged automatically — filters are for
+                                people with something to hide.</p>
+                            <div class="sd-art"><span class="mini-page">IRON</span><span class="chip">EXIF 06:07 —
+                                    <b>VERIFIED</b></span></div>
+                        </div>
+                    </div>
+
+                    <button class="step" aria-expanded="false" aria-controls="step-detail-audit">
+                        <span class="s-num">04</span>
+                        <span class="s-body"><span class="s-title">THE AUDIT</span><span class="s-line">AI vision audit.
+                                All of it, believed by no one.</span></span>
+                        <span class="s-ic ic"><i data-lucide="plus"></i></span>
+                    </button>
+                    <div class="step-detail" id="step-detail-audit" hidden>
+                        <div class="sd-in">
+                            <p class="sd-spec">Handwriting against your last thirty entries. Ink pressure. Page grain.
+                                Timestamp. Light. It has seen every trick — you are not the first to try one, and the
+                                ones before you were more creative. It didn't matter.</p>
+                            <div class="sd-art">
+                                <span class="chip">HAND MATCH</span><span class="chip">INK PRESSURE</span><span
+                                    class="chip">PAGE GRAIN</span><span class="chip">TIMESTAMP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="step" aria-expanded="false" aria-controls="step-detail-verdict">
+                        <span class="s-num">05</span>
+                        <span class="s-body"><span class="s-title">THE VERDICT</span><span class="s-line">Verdict
+                                delivered. Midnight. Three lines or fewer.</span></span>
+                        <span class="s-ic ic"><i data-lucide="plus"></i></span>
+                    </button>
+                    <div class="step-detail" id="step-detail-verdict" hidden>
+                        <div class="sd-in">
+                            <p class="sd-spec">Logged forever. Tone is your choice — the standard is not. Pick yours
+                                below; this page will obey.</p>
+                            <div class="sd-art">
+                                <span class="chip"><b>BALANCED</b> — "Good. Continue."</span>
+                                <span class="chip"><b>HARDCORE</b> — "You're slipping."</span>
+                                <span class="chip"><b>NO-BS</b> — "Own it or change it."</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loop-close" data-reveal>
+                    <span class="ic"><i data-lucide="repeat"></i></span>
+                    <span>06:00 RETURNS IN THE MORNING. THE LOOP DOES NOT CARE WHAT YOU FELT ABOUT THE VERDICT.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ THRESHOLD III : stone → charcoal ============ -->
+        <section class="strip strip--3">
+            <div class="strip-in">
+                <p class="s-a" data-reveal>You wanted the truth about yourself.</p>
+                <p class="s-b" data-reveal data-delay="60">FROM HERE ON, YOU GET EXACTLY THAT.</p>
+            </div>
+        </section>
+
+        <!-- ============ 04 — TONE (charcoal) ============ -->
+        <section class="sec sec--tone ph-char" id="tone">
+            <div class="wrap">
+                <div class="eyebrow" data-reveal>TONE</div>
+                <div class="tone-grid">
+                    <div>
+                        <h2 class="h-mono" data-reveal>Choose how hard the truth lands.</h2>
+                        <p class="lead" data-reveal>One slider, three temperatures. The verdict changes — the standard
+                            underneath never does. Switch to NO-BS and watch the rest of this page lose its patience.
+                        </p>
+                        <div class="ts-wrap" data-reveal data-delay="120">
+                            <div class="ts-track" id="tsTrack" tabindex="0" role="slider" aria-label="Tone mode"
+                                aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="BALANCED">
+                                <span class="ts-det" style="left:0"></span>
+                                <span class="ts-det" style="left:50%"></span>
+                                <span class="ts-det" style="left:100%"></span>
+                                <div class="ts-thumb" id="tsThumb"></div>
+                            </div>
+                            <div class="ts-labels">
+                                <button type="button" data-tone="balanced">BALANCED</button>
+                                <button type="button" data-tone="hardcore">HARDCORE</button>
+                                <button type="button" data-tone="nobs">NO-BS</button>
+                            </div>
+                            <div class="ts-hint">DRAG, CLICK, OR ARROW KEYS — SNAPS TO THE NEAREST TRUTH</div>
+                        </div>
+                    </div>
+
+                    <div class="vd" data-reveal data-delay="150">
+                        <div class="vd-head">&gt; SAMPLE VERDICTS — DAY 06 — 00:00</div>
+                        <div class="vd-row">
+                            <span class="vd-k">DAY MET</span>
+                            <span class="vd-v" id="vdHit">You submitted proof. Good. Continue.</span>
+                        </div>
+                        <div class="vd-row">
+                            <span class="vd-k">DAY MISSED</span>
+                            <span class="vd-v"><span id="vdMiss">Missed. Tomorrow, earlier.</span><span
+                                    class="vd-cursor" aria-hidden="true"></span></span>
+                        </div>
+                        <div class="vd-note" id="vdNote">COURTEOUS. STILL HONEST.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ THRESHOLD IV : charcoal → black ============ -->
+        <section class="strip strip--4">
+            <div class="strip-in">
+                <p class="s-a" data-reveal>That was the last soft thing on this page.</p>
+                <p class="s-b" data-reveal data-delay="60">BELOW THIS LINE — ONLY IRON.</p>
+            </div>
+        </section>
+
+        <!-- ============ 05 — THE WALL (iron) ============ -->
+        <section class="sec sec--wall ph-iron" id="wall">
+            <div class="wrap">
+                <div class="eyebrow" data-reveal>THE WALL OF DISCIPLINE</div>
+                <h2 class="h-mono" data-reveal>No names. No faces. Just proof.</h2>
+                <p class="lead" data-reveal>These people finished what they started. That's the entire trophy. There is
+                    no other trophy.</p>
+
+                <div class="wall" id="wallGrid"></div>
+                <div class="wall-legend" data-reveal>
+                    <span>ONE NUMBER — ONE FINISHER</span><span>VALUE — DAYS COMPLETED</span><span>BRIGHTER RED —
+                        LONGER</span><span>UNDERLINED — THE RECORD</span>
+                </div>
+                <div class="wall-stats" id="wallStats" data-reveal></div>
+            </div>
+        </section>
+
+        <!-- ============ 06 — THE FORGE (pricing + first challenge) ============ -->
+        <!-- ============ 06 — THE DOOR (the forge lives on its own page now) ============ -->
+        <section class="sec sec--door ph-iron" id="door">
+            <div class="wrap">
+                <div class="eyebrow" data-reveal>THE FORGE</div>
+                <h2 class="h-mono" data-reveal>Start the 7-day challenge. Or don't.</h2>
+                <p class="lead" data-reveal>We're not here to convince you. The tiers, the form, your first code —
+                    everything is through this door. If you go, you were ready. If not, you weren't. And that's fine.
+                </p>
+                <div class="hero-cta" data-reveal>
+                    <a class="btn btn-terra" href="pricing.html">ENTER THE FORGE <span class="ic"><i
+                                data-lucide="arrow-right"></i></span></a>
+                </div>
+                <div class="note-hand" data-reveal>or don't. that's the point.</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="ph-iron">
+        <div class="wrap">
+            <div class="foot">
+                <a class="brand" href="#top">STOIC CARE<span class="b-dot"></span></a>
+                <div class="foot-mid">06:00 — EVERY DAY — NO EXCUSES</div>
+                <nav class="foot-links" aria-label="Footer">
+                    <a href="#habits">HABITS</a><a href="#loop">THE LOOP</a><a href="#tone">TONE</a><a href="#wall">THE
+                        WALL</a><a href="pricing.html">PRICING</a>
+                </nav>
+            </div>
+            <div class="foot-base">© MMXXV STOIC CARE — THE TOP OF THIS PAGE IS STILL THERE. SO IS 06:00.</div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
